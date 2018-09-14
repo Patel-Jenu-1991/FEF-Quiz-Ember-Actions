@@ -1,1 +1,14 @@
-{{outlet}}
+<h2>Red bricks only!</h2>
+{{#each model as |item|}}
+<div class="col-sm-3 well">
+  <p>Color: {{item.itemColor}}</p>
+  <p>Size: {{item.itemSize}}</p>
+  <p>Price: {{item.itemPrice}}</p>
+</div>
+{{/each}}
+
+<div class="container">
+  <div class="contents">
+    {{outlet}}
+  </div>
+</div>

@@ -5,6 +5,9 @@
       <p>Size: {{size}}</p>
       <p>Price: {{stats.price}}</p>
       <p>Quantity: {{stats.quantity}}</p>
+      <button {{action 'addToCart' 'red' size stats.price stats.quantity}}>
+        Add To Cart
+      </button>
     </div>
   {{/each-in}}
 </section>
